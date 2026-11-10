@@ -1,0 +1,9 @@
+{
+  "id": "com.sleepysoong.logent.android",
+  "key": "sleepysoong:android",
+  "name": "Android",
+  "entry": "com.sleepysoong.logent.android.AndroidPlugin",
+  "dependencies": [],
+  "apiMin": 4,
+  "apiMax": 4
+}
