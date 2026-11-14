@@ -192,8 +192,13 @@ Logent에 Android 공통 기기 기능을 제공하는 독립 `.lpg` 플러그�
   `AndroidPersonalTools.kt`, `AndroidMediaTools.kt`: 도구별 Android 호출
 - `AndroidConstraints.kt`, `AndroidIntentPlans.kt`: Android 없이 테스트하는 순수 helper
 
-Gradle 빌드·서명·배포는 상위 저장소 절차를 따라요. 서명 키는 Git 밖에 두고
-`LOGENT_PLUGIN_SIGNING_KEY_FILE`로 지정해요.
+`.lpg` 패키지는 다음 명령으로 만들어요.
+
+```bash
+./scripts/build.sh -PlogentPluginApiMavenLocal=true
+```
+
+산출물은 `build/dist/logent-android-v<version>.lpg` 하나예요.
 
 ## 보안
 
